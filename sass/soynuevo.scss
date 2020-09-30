@@ -1,0 +1,29 @@
+/* SOY NUEVO STYLE */
+
+@import "branch.scss";
+
+header {
+    height: 200px;
+    width: 100%;
+    
+    #banner {
+        width: 50%;
+        height: 500px;
+        margin-bottom: 5vw;
+        box-shadow: 0px 10px 15px black;
+        h3 {
+            font-family: 'Recursive', sans-serif;
+            float: left;
+            margin-left: 5%;
+            margin-top: 40%;
+            font-size: calc(3px + 3vw);
+            color: white;
+        }
+    
+    }
+}
+
+
+@media (max-width: 800px){
+    
+}

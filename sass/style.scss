@@ -1,0 +1,704 @@
+$violeta : rgba(78, 0, 78, 1);
+
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.anchor_offset::before {
+    display: block;
+    content: ' ';
+    height: 100px;
+    width: 100%;
+
+}
+
+
+html, body {
+    overflow-y: visible;
+}
+
+/* SMOOTH SCROLL */
+#home,
+#location,
+#horarios,
+#presentacion,
+#donaciones,
+#contacto-redes {
+    scroll-behavior: smooth; 
+}
+
+#home {
+    background: url("../img/inicio2OK.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #464646;
+
+    #inicio {
+        width: 100%;
+        margin: 0px auto;
+        padding-top: 0px;
+        box-sizing: border-box;
+
+        #top-header {
+            width: 100%;
+            display: fixed;
+            z-index: 10;
+        }
+
+        .top-bar {
+            height: calc(45px + 4vh);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            transition: all 200ms;
+
+            background-color: black;
+        }
+
+        #logo {
+            -webkit-transition: all .3s; // Chrome 
+            -moz-transition: all .3s; // Mozilla 
+            -o-transition: all .3s; // Opera 
+            transition: all .3s;
+
+            height: calc(80px + 4vw);
+            
+            float: left;
+
+            img {
+                -webkit-transition: all .3s; // Chrome 
+                -moz-transition: all .3s; // Mozilla 
+                -o-transition: all .3s; // Opera 
+                transition: all .3s; 
+
+
+                padding-top: 18px;
+                padding-left: 3vw;
+                height: calc(75px + 6vw);
+            }
+        }
+
+        #mobile-nav-button {
+            -webkit-transition: all .5s; // Chrome 
+            -moz-transition: all .5s; // Mozilla 
+            -o-transition: all .5s; // Opera 
+            transition: all .5s; 
+
+            margin-top: 18px;
+            position: fixed;
+            width: calc(15px + 4vh);
+            height: calc(15px + 4vh);
+            box-sizing: border-box;
+            right: 4vw;
+            color: white;
+            z-index: 13;
+        }
+
+        #mobile-nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            max-width:1000px;
+            padding-top: calc(20px + 10vh);
+            background:#000000;
+            z-index: 12;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 10px;
+
+                color: white;
+                line-height: 60px;
+                font-size: 50px;
+                font-family: 'Questrial', sans-serif;
+            }
+
+            #nav-elementos {
+                width: 100%;
+                text-align: center;
+                ul {
+                    list-style: none;
+                    width: 100%;
+                    margin-top: 15px;
+                    width: 100%;
+                    li {
+                        line-height: 60px;
+                        width: 100%;
+                        display: block;
+
+                        a{
+                            width: 100%;
+                            display: block;
+                            text-decoration: none;
+                            color: white;
+                            font-size: 40px;
+                            line-height: 60px;
+                            font-family: 'Questrial', sans-serif;
+                        }
+                    }
+                }
+                
+            
+            }
+        }
+
+        #soy-nuevo {
+            float: right;
+            padding-top: 50px;
+            padding-left: 15px;
+            padding-right: 25px;
+            button {
+                display: none; 
+                background-color: $violeta;
+                padding: 10px;
+                font-size: 1em;
+                outline: none;
+                cursor: pointer;
+                border: solid 2px rgb(255, 255, 255);
+                border-radius: 1em;
+                transition: all 300ms;
+
+                a {
+                    color: white;
+                    font-family: 'Recursive', sans-serif;
+                    z-index: 5;
+                }
+
+                a:hover {
+                    color: yellow;
+                }
+            }
+
+            button:hover {
+                background-color: transparent;
+                border: 2px solid yellow;
+            }
+        }
+
+        #rrss {
+            width: auto;
+            float: right;
+            padding-top: 50px;
+            ul {
+                line-height: 45px;
+                list-style: none;
+
+                li {
+                    height: 45px;
+                    display: inline-block;
+                    
+
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        color: white;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        font-size: x-large;
+                        transition: all 300ms;
+                    }
+
+                    a:hover {
+                        color: yellow;
+                    }
+                }
+            }
+        }
+
+        #somos-flia {
+            padding: 30px;
+            padding-top: calc(0px + 30vh);
+            font-size: calc(15px + 4vw);
+            line-height: calc(23px + 4.8vw);
+            letter-spacing: -10px;
+            color: rgba(255, 255, 255, 0.82);
+            font-family: 'Alata', sans-serif;
+        }
+        
+    }
+}
+
+#global {
+    padding: 0;
+    transition: all 400ms;
+
+    #titulo {
+        line-height: 60px;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(233, 233, 233);
+        
+
+        h2 {
+            font-size: 50px;
+            font-family: 'Recursive', sans-serif;
+        }
+    }
+
+    #location {
+        width: 90%;
+        padding-top: 90px;
+        margin: 0px auto;
+        box-sizing: border-box;
+
+        h3 {
+            font-family: 'Questrial', sans-serif;
+            color: $violeta;
+            text-align: center;
+            line-height: 45px;
+            font-size: calc(27px + 2vw);
+            margin-bottom: 4vw;
+        }
+
+        #sede {
+            width: 60%;
+            height: 30vw;
+            float: left;
+            margin-bottom: 5vw;
+            box-shadow: 0px 10px 15px black;
+
+            h3 {
+                font-family: 'Recursive', sans-serif;
+                float: left;
+                margin-left: 5%;
+                margin-top: 40%;
+                font-size: calc(3px + 3vw);
+                color: white;
+            }
+        }
+
+        #ubicacion {
+            width: 35%;
+            float: right;
+            background-color: grey;
+            height: 30vw;
+            box-shadow: 0px 8px 15px black;
+            margin-bottom: 5vw;
+            
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        h4 {
+            font-family: 'Questrial', sans-serif;
+            color: $violeta;
+            text-align: center;
+            line-height: 45px;
+            font-size: calc(27px + .8vw);
+            margin-bottom: 1vw;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.7em;
+            font-family: 'Questrial', sans-serif;
+        }
+
+        #pre-boxWithBorder {
+            height: 90px;
+        }
+    
+        #horarios {
+            background: url(../img/location/horario.png);
+            background-position: 100% 50%;
+            background-repeat: no-repeat;
+            background-attachment: initial;
+            background-size: contain;
+            background-color: rgba(165, 165, 165, 0.281);
+            margin: 0px auto;
+            padding: 15px;
+            width: 80vw;
+            margin-top: calc(10px + 4vw);
+
+            border: 3px solid grey;
+            border-radius: 1em;
+            transition: all 400ms;
+
+
+            p {
+                line-height: 1.2em;
+                padding-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    color: blue;
+
+                }
+            }
+        }
+
+        #horarios:hover {
+            background-color: rgba(165, 165, 165, 0.089);
+            border: 3px solid $violeta;
+        }
+    
+        
+    }
+
+    #presentacion {
+        
+        display: inline-block;
+
+        #info-idea {
+            
+            display: inline-block;
+            width: 80%;
+            margin: 0px auto;
+            padding-bottom: 50px;
+            padding-top: 0px;
+    
+            .h3 {
+                font-size: 3em;
+                text-align: center;
+                margin-bottom: 55px;
+                font-family: 'Questrial', sans-serif;
+            }
+
+            .p {
+                text-align: center;
+                font-size: 2em;
+                font-family: 'Questrial', sans-serif;
+            }
+        }
+
+        .img-side1 {
+            margin-top: 80px;
+            float: left;
+            width: 10%;
+
+        }
+
+        .img-side2 {
+            margin-top: 80px;
+            width: 10%;
+            float: right;
+            img {
+                float: right;
+            }
+        }
+    }
+
+    #areas{
+        .area-mobile {
+            background-color:rgba(30, 1, 63, 0.42);
+            font-family: 'Recursive', sans-serif;
+        }
+    }
+
+    #donaciones {
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+
+        h3 {
+            font-family: 'Questrial', sans-serif;
+            color: $violeta;
+            text-align: center;
+            line-height: 45px;
+            font-size: calc(34px + 1vw);
+            margin-bottom: 4vw;
+        }
+
+        .box-donaciones {
+            color: white;
+            width: 48%;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            background-color: $violeta;
+            border-radius: 1em;
+            padding: 25px;
+            font-family: 'Recursive', sans-serif;
+
+            h4 {
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 12px;
+            }
+            p {
+                text-align: center;
+                font-size: calc(15px + 1vw);
+            }
+        }
+
+        #cbu {
+            float: left;
+        }
+
+        #mercado-pago {
+            float: right;
+            box-sizing: border-box;
+
+            h4 {
+                margin-top: 1%;
+            }
+
+            p {
+                font-size: calc(15px + 1vw); /* cambia font size del .box-donaciones p */
+                width: 100%;
+                display: inline-block;
+                
+                align-content: center;
+                vertical-align: top;
+                
+            }
+
+            .img-mercado-pago {
+                box-sizing: border-box;
+                display: block;
+                margin: 10px auto;
+                width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+    
+    #contacto {
+        background: url(../img/contacto/contacto-bg2.png);
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: contain;
+        background-color: rgba(165, 165, 165, 0.363);
+        width: 85%;
+        margin: 0px auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        border: 3px solid grey;
+        border-radius: 1em;
+        height: auto;
+
+        h3 {
+            font-family: 'Questrial', sans-serif;
+            color: $violeta;
+            text-align: center;
+            line-height: 45px;
+            font-size: calc(34px + 1vw);
+            margin-bottom: 1vw;
+        }
+
+        #contacto-redes {
+            width: 70%;
+            margin: 0px auto;
+
+            ul {
+                margin: 0px auto;
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                li {
+                    
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        display: block;
+                    }
+                    
+                }
+                
+                .li-facebook,
+                .li-instagram,
+                .li-whatsapp,
+                .li-spotify
+                 {
+                    background-color: rgba(255, 255, 255, 0.733);
+                    font-size: 25px;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                    float: left;
+                    border: 3px solid black;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    padding: 20px;
+                    padding-left: 21px;
+                    margin: 15px;
+                    transition: all 600ms;
+                }
+                /* separado YT porque no queda centrado como todos */
+                .li-youtube {
+                    background-color: rgba(255, 255, 255, 0.733);
+                    font-size: 25px;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                    float: left;
+                    border: 3px solid black;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    padding: 19px;
+                    margin: 15px;
+                    transition: all 600ms;
+                }
+
+
+                .li-facebook:hover {
+                    border: 3px solid white;
+                    background-color: rgba(0, 4, 255, 0.582);
+                    a{
+                        color: white;
+                    }
+                }
+                .li-instagram:hover {
+                    border: 3px solid white;
+                    background-color: rgba(255, 0, 85, 0.582);
+                    a{
+                        color: white;
+                    }
+                }
+                .li-whatsapp:hover {
+                    border: 3px solid white;
+                    background-color: rgba(0, 61, 18, 0.582);
+                    a{
+                        color: white;
+                    }
+                }
+                .li-youtube:hover {
+                    border: 3px solid white;
+                    background-color: rgba(255, 0, 0, 0.582);
+                    a{
+                        color: white;
+                    }
+                }
+                .li-spotify:hover {
+                    border: 3px solid white;
+                    background-color: rgba(0, 161, 8, 0.582);
+                    a{
+                        color: white;
+                    }
+                }
+
+            }
+        }
+    }
+    
+}
+.parallax-window {
+    min-height: 30vw;
+    background: transparent;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    h2 {
+        font-size: 30px;
+        font-weight: 5px;
+        font-family: 'Questrial', sans-serif;
+        display: inline;
+    }
+    
+    p {
+        float: right;
+        font-size: 12px;
+        line-height: 30px;
+        font-family: 'Questrial', sans-serif;
+        color: white;
+
+        :hover {
+            color: grey;
+        }
+
+        a {
+            color: white;
+
+            :hover {
+                color: grey;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+    #somos-flia {
+        text-align: center;
+    }
+
+    #location {
+        width: 90%;
+
+        #sede {
+            min-width: 100%;
+            width: 100%;
+            padding: 0px;
+
+            h3 {
+                position: relative;
+                top: -90px;
+                left: 8px;
+            }
+
+        }
+    
+        #ubicacion {
+            min-width: 100%;
+        }
+    }
+
+    #section {
+        .img-side1, .img-side2 {
+            display: none;
+        }
+    }
+
+    #donaciones {
+        margin-bottom: 50px;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .box-donaciones {
+            min-width: 100%;
+
+            p {
+                font-size: calc(15px + 1vw);
+            }
+        }
+
+        #mercado-pago {
+            p{
+                font-size: calc(15px + 1vw);
+                display: block;
+                min-width: 100%;
+                font-size: 40px;             
+            }
+        }
+
+    }
+    
+}
