@@ -1,0 +1,21 @@
+/* CLASES DE  -TOP HEADER ELEMENTS-  */
+.sm-logo {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sm-logoImg {
+  filter: drop-shadow(1px 3px 3px #222222);
+  max-height: 65px;
+  padding-top: 0px;
+  margin: 0px;
+}
+
+.sm-navMenuButton {
+  margin-top: 15px;
+}
+
+.sm-navMenuButtonSpan {
+  box-shadow: 0px 5px 10px black;
+}
+/*# sourceMappingURL=top-header.css.map */

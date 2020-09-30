@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,qBAAqB;ACArB,yBAAyB;ADIzB,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;CAiBd;;AAnBD,AAII,MAJE,CAIF,OAAO,CAAC;EACJ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,mBAAmB;CAUlC;;AAlBL,AASQ,MATF,CAIF,OAAO,CAKH,EAAE,CAAC;EACC,WAAW,EAAE,uBAAuB;EACpC,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,EAAE;EACf,UAAU,EAAE,GAAG;EACf,SAAS,EAAE,eAAe;EAC1B,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "../sass/soynuevo.scss",
+        "../sass/branch.scss"
+    ],
+    "names": [],
+    "file": "soynuevo.css"
+}

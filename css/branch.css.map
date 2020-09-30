@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,yBAAyB",
+    "sources": [
+        "../sass/branch.scss"
+    ],
+    "names": [],
+    "file": "branch.css"
+}
